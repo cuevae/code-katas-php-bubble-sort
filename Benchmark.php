@@ -50,7 +50,7 @@ if ($returnVal === 0)
     $input = array( 8, 7, 6, 2, 1 );
     $bench2->start();
     $result = $bubbleSort->run($input);
-    $bench2->start();
+    $bench2->end();
     echo ".\n";
 
     $input = array( 1, 2, 3, 4 );
