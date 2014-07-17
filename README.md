@@ -57,3 +57,10 @@ You goal is to write, **using a TDD approach**, the necessary code in order to *
 2. Check you are good to go
     - `bin/phpunit`
     - You should see the Bubble Sort tests failing, now it's your turn to implement the necessary code to make them pass
+
+## Benchmark
+
+Once done with the kata you can benchmark your solution by running the `Benchmark.php` from the command line:
+`php Benchmark.php`.
+
+This script will output the time and memory used y your solution and can be used to compare different implementations of the algorithm.
