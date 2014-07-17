@@ -4,11 +4,57 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3a023f4dca4c79e7d04e49e3247bff09",
+    "hash": "a5a15c55e3d8d7c3cd8f31af55bdd299",
     "packages": [
 
     ],
     "packages-dev": [
+        {
+            "name": "devster/ubench",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/devster/ubench.git",
+                "reference": "b0d1f9a4ffad3b43413fdc6013c01e65dde11742"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/devster/ubench/zipball/b0d1f9a4ffad3b43413fdc6013c01e65dde11742",
+                "reference": "b0d1f9a4ffad3b43413fdc6013c01e65dde11742",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Ubench": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeremy Perret",
+                    "email": "jeremy@devster.org",
+                    "homepage": "https://github.com/devster"
+                }
+            ],
+            "description": "Micro PHP library for benchmarking",
+            "homepage": "https://github.com/devster/ubench",
+            "keywords": [
+                "bench",
+                "benchmark",
+                "library",
+                "micro"
+            ],
+            "time": "2013-02-28 08:22:22"
+        },
         {
             "name": "phpunit/php-code-coverage",
             "version": "2.0.9",
@@ -710,9 +756,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "devster/ubench": 20
+    },
     "platform": {
         "php": ">=5.4"
     },
