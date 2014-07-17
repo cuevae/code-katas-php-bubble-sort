@@ -7,7 +7,7 @@ Suppose you have a list of **unique** numbers as in `<2,7,3,4,1,5>` placed with 
 You are asked to write an algorithm that sorts those numbers from lower to higher.
 
 From previous sorting problems you've just remembered the existence of an algorithm that does that for you.
-This is the **Bubble Sort** algorithm, which definition and pseudo-code look like the following:
+This is the **Bubble Sort** algorithm, which definition and pseudo-code are the following:
 
 ### Algorithm Definition
 
