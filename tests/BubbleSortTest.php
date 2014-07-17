@@ -27,10 +27,45 @@ class BubbleSortTest extends PHPUnit_Framework_TestCase
         $this->assertEquals($expected, $result);
     }
 
+    /**
+     * @param $a
+     * @param $b
+     * @param $input
+     * @param $expected
+     *
+     * @dataProvider swapProvider
+     *
+     */
+    public function testSwap($a, $b, $input, $expected)
+    {
+        $result = $this->bubbleSort->swap($a, $b, $input);
+        $this->assertEquals($expected, $result);
+    }
+
 
     /*****************************************************************************************************************
      *                                                    PROVIDERS
      *****************************************************************************************************************/
+
+
+    /**
+     * @return array
+     */
+    public function swapProvider()
+    {
+        return array(
+            array(
+                0, 1, array( 'a', 'b' ), array( 'b', 'a' )
+            ),
+            array(
+                1, 0, array( 'a', 'b' ), array( 'b', 'a' )
+            ),
+            array(
+                3, 1, array( 'a', 'b', 'c', 'd' ), array( 'a', 'd', 'c', 'b' )
+            )
+        );
+    }
+
 
     /**
      * @return array
