@@ -31,7 +31,7 @@ bubblesort(A):
 
 ## Goal
 
-You goal is to write, using a TDD approach, the necessary code in order to implement Bubble Sort for any given list. Code can be found in the `src` folder, while tests - suprisingly - can be found in the `tests` folder.
+You goal is to write, using a TDD approach, the necessary code in order to implement Bubble Sort for any given list. Code can be found in the `src` folder, while tests can be found - suprisingly - in the `tests` folder.
 
 ## Examples
 
