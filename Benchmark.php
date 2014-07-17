@@ -23,37 +23,88 @@ ob_get_clean();
 //If tests are passing, execute Benchmark
 if ($returnVal === 0)
 {
-    $bench = new Ubench();
+    //Timer for the whole script
+    $generalBench = new Ubench();
 
-    echo "\nStart...\n\n";
-    $bench->start();
+    //Timer for individual runs
+    $bench1 = new Ubench();
+    $bench2 = new Ubench();
+    $bench3 = new Ubench();
+    $bench4 = new Ubench();
+    $bench5 = new Ubench();
+
+    $input500 = range(1, 500);
+    shuffle($input500);
+
+    echo "\nSorting started:\n";
+    $generalBench->start();
 
     $bubbleSort = new BubbleSort();
 
-    echo "Sorting: <2,3,1>\n";
-    $input  = [ 2, 3, 1 ];
+    $input = [ 2, 3, 1 ];
+    $bench1->start();
     $result = $bubbleSort->run($input);
+    $bench1->end();
+    echo ".\n";
 
-    echo "Sorting: <8,7,6,2,1>\n";
-    $input  = [ 2, 3, 1 ];
+    $input = [ 8, 7, 6, 2, 1 ];
+    $bench2->start();
     $result = $bubbleSort->run($input);
+    $bench2->start();
+    echo ".\n";
 
-    echo "Sorting: <1,2,3,4>\n";
-    $input  = [ 2, 3, 1 ];
+    $input = [ 1, 2, 3, 4 ];
+    $bench3->start();
     $result = $bubbleSort->run($input);
+    $bench3->end();
+    echo ".\n";
 
-    echo "Sorting: <2,6,3,4,5,1>\n";
-    $input  = [ 2, 3, 1 ];
+    $input = [ 2, 6, 3, 4, 5, 1 ];
+    $bench4->start();
     $result = $bubbleSort->run($input);
+    $bench4->end();
+    echo ".\n";
 
-    $bench->end();
+    $bench5->start();
+    $result = $bubbleSort->run($input500);
+    $bench5->end();
+    echo ".\n";
 
-    echo "\nFinished!\n";
+    $generalBench->end();
 
-    echo "\nBenchmark times:\n";
-    echo "Time: " . $bench->getTime() . "\n";
-    echo "Memory Peak: " . $bench->getMemoryPeak() . "\n";
-    echo "Memory Usage: " . $bench->getMemoryUsage() . "\n";
+    echo "\nSorting finished!\n";
+
+    echo "\nBenchmark for <2,3,1> input:\n";
+    echo "Time: " . $bench1->getTime() . "\n";
+    echo "Memory Peak: " . $bench1->getMemoryPeak() . "\n";
+    echo "Memory Usage: " . $bench1->getMemoryUsage() . "\n";
+
+    echo "\nBenchmark for <8,7,6,2,1> input:\n";
+    echo "Time: " . $bench2->getTime() . "\n";
+    echo "Memory Peak: " . $bench2->getMemoryPeak() . "\n";
+    echo "Memory Usage: " . $bench2->getMemoryUsage() . "\n";
+
+    echo "\nBenchmark for <1,2,3,4> input:\n";
+    echo "Time: " . $bench3->getTime() . "\n";
+    echo "Memory Peak: " . $bench3->getMemoryPeak() . "\n";
+    echo "Memory Usage: " . $bench3->getMemoryUsage() . "\n";
+
+    echo "\nBenchmark for <2,6,3,4,5,1> input:\n";
+    echo "Time: " . $bench4->getTime() . "\n";
+    echo "Memory Peak: " . $bench4->getMemoryPeak() . "\n";
+    echo "Memory Usage: " . $bench4->getMemoryUsage() . "\n";
+
+    echo "\nBenchmark for randomly shuffled array of 500 elements:"
+//         . "\n" . print_r($input500, true)
+         . "\n";
+    echo "Time: " . $bench5->getTime() . "\n";
+    echo "Memory Peak: " . $bench5->getMemoryPeak() . "\n";
+    echo "Memory Usage: " . $bench5->getMemoryUsage() . "\n";
+
+    echo "\nBenchmark total times:\n";
+    echo "Time: " . $generalBench->getTime() . "\n";
+    echo "Memory Peak: " . $generalBench->getMemoryPeak() . "\n";
+    echo "Memory Usage: " . $generalBench->getMemoryUsage() . "\n";
 
 } else
 {
