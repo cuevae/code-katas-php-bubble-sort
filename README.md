@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Suppose you have a list of **unique** numbers as <2,7,3,4,1,5> placed with no specific order within the collection.
+Suppose you have a list of **unique** numbers as in `<2,7,3,4,1,5>` placed with no specific order within a collection.
 
 You are asked to write an algorithm that sorts those numbers from lower to higher.
 
