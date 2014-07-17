@@ -47,8 +47,8 @@ You goal is to write, **using a TDD approach**, the necessary code in order to *
 ## Start
 
 0. Install composer.phar (if you don't already have it)
-    - [*nix](https://getcomposer.org/doc/00-intro.md#installation-nix)
-    - [Windows](https://getcomposer.org/doc/00-intro.md#installation-windows)
+    - [*nix installation guide](https://getcomposer.org/doc/00-intro.md#installation-nix)
+    - [Windows installation guide](https://getcomposer.org/doc/00-intro.md#installation-windows)
 
 1. Clone the respository and install dependencies
     - `git clone https://github.com/cuevaec/codeKatas-php-bubbleSort.git`
