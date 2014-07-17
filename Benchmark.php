@@ -41,25 +41,25 @@ if ($returnVal === 0)
 
     $bubbleSort = new BubbleSort();
 
-    $input = [ 2, 3, 1 ];
+    $input = array( 2, 3, 1 );
     $bench1->start();
     $result = $bubbleSort->run($input);
     $bench1->end();
     echo ".\n";
 
-    $input = [ 8, 7, 6, 2, 1 ];
+    $input = array( 8, 7, 6, 2, 1 );
     $bench2->start();
     $result = $bubbleSort->run($input);
     $bench2->start();
     echo ".\n";
 
-    $input = [ 1, 2, 3, 4 ];
+    $input = array( 1, 2, 3, 4 );
     $bench3->start();
     $result = $bubbleSort->run($input);
     $bench3->end();
     echo ".\n";
 
-    $input = [ 2, 6, 3, 4, 5, 1 ];
+    $input = array( 2, 6, 3, 4, 5, 1 );
     $bench4->start();
     $result = $bubbleSort->run($input);
     $bench4->end();
