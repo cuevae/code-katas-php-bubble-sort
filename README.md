@@ -31,8 +31,9 @@ bubblesort(A):
 
 ## Goal
 
-You goal is to write the necessary code in PHP and using TDD in order to implement Bubble sorting for any given list.
- Below you'll find some test cases:
+You goal is to write, using a TDD approach, the necessary code in order to implement Bubble Sort for any given list. Code can be found in the `src` folder, while tests - suprisingly - can be found in the `tests` folder.
+
+## Examples
 
  Input             | Output
  :------           | :----
