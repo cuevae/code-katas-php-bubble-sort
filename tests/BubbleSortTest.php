@@ -37,20 +37,20 @@ class BubbleSortTest extends PHPUnit_Framework_TestCase
      */
     public function collectionsProvider()
     {
-        return [
-            [
-                [ 2, 3, 1 ], [ 1, 2, 3 ]
-            ],
-            [
-                [ 8, 7, 6, 2, 1 ], [ 1, 2, 6, 7, 8 ]
-            ],
-            [
-                [ 1, 2, 3, 4 ], [ 1, 2, 3, 4 ]
-            ],
-            [
-                [ 2, 6, 3, 4, 5, 1 ], [ 1, 2, 3, 4, 5, 6 ]
-            ]
-        ];
+        return array(
+            array(
+                array( 2, 3, 1 ), array( 1, 2, 3 )
+            ),
+            array(
+                array( 8, 7, 6, 2, 1 ), array( 1, 2, 6, 7, 8 )
+            ),
+            array(
+                array( 1, 2, 3, 4 ), array( 1, 2, 3, 4 )
+            ),
+            array(
+                array( 2, 6, 3, 4, 5, 1 ), array( 1, 2, 3, 4, 5, 6 )
+            )
+        );
     }
 
 } 
