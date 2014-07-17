@@ -29,11 +29,7 @@ bubblesort(A):
     until not changed
 ```
 
-## Goal
-
-You goal is to write, **using a TDD approach**, the necessary code in order to **implement Bubble Sort** for any given list. Code can be found in the `src` folder, while tests can be found - suprisingly - in the `tests` folder.
-
-## Examples
+### Examples
 
  Input             | Output
  :------           | :----
@@ -41,3 +37,23 @@ You goal is to write, **using a TDD approach**, the necessary code in order to *
  `<8,7,6,2,1>`     | `<1,2,6,7,8>`
  `<1,2,3,4>`       | `<1,2,3,4>`
  `<2,6,3,4,5,1>`   | `<1,2,3,4,5,6>`
+ 
+
+
+## Goal
+
+You goal is to write, **using a TDD approach**, the necessary code in order to **implement Bubble Sort** for any given list. Code can be found in the `src` folder, while tests can be found - suprisingly - in the `tests` folder.
+
+## Start
+
+0. Install composer.phar (if you don't already have it)
+    - [*nix](https://getcomposer.org/doc/00-intro.md#installation-nix)
+    - [Windows](https://getcomposer.org/doc/00-intro.md#installation-windows)
+
+1. Clone the respository and install dependencies
+    - `git clone https://github.com/cuevaec/codeKatas-php-bubbleSort.git`
+    - `cd codekatas-php-bubbleSort; composer install`
+
+2. Check you are good to go
+    - `bin/phpunit`
+    - You should see the Bubble Sort tests failing, now it's your turn to implement the necessary code to make them pass
