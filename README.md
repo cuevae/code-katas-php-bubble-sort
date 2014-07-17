@@ -63,4 +63,4 @@ You goal is to write, **using a TDD approach**, the necessary code in order to *
 Once done with the kata you can benchmark your solution by running the `Benchmark.php` script from the command line:
 `php Benchmark.php`.
 
-This script will output the time and memory used y your solution and can be used to compare different implementations of the algorithm.
+This script will output the time and memory used by your solution and can be used to compare different implementations of the algorithm.
