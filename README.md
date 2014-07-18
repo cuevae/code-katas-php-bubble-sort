@@ -51,7 +51,7 @@ You goal is to write, **using a TDD approach**, the necessary code in order to *
     - [Windows installation guide](https://getcomposer.org/doc/00-intro.md#installation-windows)
 
 1. Clone the respository and install dependencies
-    - `git clone https://github.com/cuevaec/codeKatas-php-bubbleSort.git`
+    - `git clone https://github.com/cuevaec/code-katas-bubble-sort-php.git`
     - `cd codekatas-php-bubbleSort; composer install`
 
 2. Check you are good to go
