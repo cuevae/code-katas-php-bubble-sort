@@ -50,7 +50,7 @@ You goal is to write, **using a TDD approach**, the necessary code in order to *
     - [*nix installation guide](https://getcomposer.org/doc/00-intro.md#installation-nix)
     - [Windows installation guide](https://getcomposer.org/doc/00-intro.md#installation-windows)
 
-1. Clone the respository and install dependencies
+1. Clone the repository and install dependencies
     - `git clone https://github.com/cuevaec/code-katas-bubble-sort-php.git`
     - `cd codekatas-php-bubbleSort; composer install`
 
