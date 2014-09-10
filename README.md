@@ -50,13 +50,15 @@ You goal is to write, **using a TDD approach**, the necessary code in order to *
     - [*nix installation guide](https://getcomposer.org/doc/00-intro.md#installation-nix)
     - [Windows installation guide](https://getcomposer.org/doc/00-intro.md#installation-windows)
 
-1. Clone the repository and install dependencies
+1. Fork the repository and install dependencies
     - `git clone https://github.com/cuevaec/code-katas-bubble-sort-php.git`
     - `cd codekatas-php-bubbleSort; composer install`
 
 2. Check you are good to go
     - `bin/phpunit`
     - You should see the Bubble Sort tests failing, now it's your turn to implement the necessary code to make them pass
+
+3. Once you've finished you can create a Pull Request and submit a branch with your solution
 
 ## Benchmark
 
